@@ -16,7 +16,17 @@ export const AppProvider = ({ children }) => {
   const [isOwner, setIsOwner] = useState(false);
   const [showHotelReg, setShowHotelReg] = useState(false);
 
-  const value = {};
+  const value = {
+    currency,
+    navigate,
+    user,
+    getToken,
+    isOwner,
+    setIsOwner,
+    axios,
+    showHotelReg,
+    setShowHotelReg,
+  };
   return <AppContext.Provider value={value}>{children}</AppContext.Provider>;
 };
 
